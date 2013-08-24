@@ -5,7 +5,7 @@ tagline: 分享学习技术的经验
 ---
 {% include JB/setup %}
 
-## 帖子列表
+## posts
 -----
 
 <ul class="posts">
