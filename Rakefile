@@ -51,8 +51,6 @@ task :post do
 
   slug = Hz2py.do(title.encode('utf-8'), :join_with => '-', :to_simplified => true)
   # slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  puts "Hello"
-  puts slug
   #------------------------------------------------------------------------------------
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
