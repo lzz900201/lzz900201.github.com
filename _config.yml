@@ -3,9 +3,12 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 markdown: rdiscount
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
+
+redcarpet:
+  extensions: [fenced_code_blocks]
+  render_options:
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
