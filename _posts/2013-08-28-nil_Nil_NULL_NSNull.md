@@ -3,7 +3,7 @@ layout: post
 title: "nil、Nil、NULL、NSNull的区别"
 description: ""
 category: iOS_Dev
-tags:    
+tags: [nil]
 ---
 {% include JB/setup %}
 
@@ -53,10 +53,10 @@ NSNull被大量的使用在*Foundation*和其他的框架中，以用来避免�
 
 | *Symbol* | *Value* | *Meaning* |
 |:--------:|:-------:|:---------:|   
-| NULL | (void \*)0 | Literal null value for C pointers |   
-| nil | (id)0 | literal null value for Objective-C objects |   
-| Nil | (Class)0 | literal null value for Objection classes |   
-| NSNull | \[NSNull null\] | singleton object used to represent null |   
+| NULL | (void \*)0 | Literal null value for C pointers    
+| nil | (id)0 | literal null value for Objective-C objects 
+| Nil | (Class)0 | literal null value for Objection classes 
+| NSNull | \[NSNull null\] | singleton object used to represent null 
 
 
 
