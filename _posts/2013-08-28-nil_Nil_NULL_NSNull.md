@@ -13,11 +13,11 @@ tags:
 
 C语言用0表示`基本数据类型`的空（nothing）,NULL表示`指针`类型的空。  
 
-Objective-C 通过为C的#为空表示法#上添加了一个*nil*, nil是一个不指向任何对象的指针。在语义上区别于NULL，但是在技术层面，他两个又等价。   
+Objective-C 通过为C的`为空表示法`上添加了一个*nil*, nil是一个不指向任何对象的指针。在语义上区别于NULL，但是在技术层面，他两个又等价。   
 
 在框架层上，Foundation定义了NSNull类，这个类定义了一个叫做*+null*的类方法，这个类方法返回了一个NSNull的单例对象。NSNull和nil与NULL不同的是，NSNull是一个真正的类，而不是一个空值（zero value）。   
 
-另外，在[Foundation/NSObjCRuntime.h][]中，Nil呗定义为一个指向空的*类指针*。
+另外，在[Foundation/NSObjCRuntime.h][]中，Nil被定义为一个指向空的*类指针*。
 它不经常出现，但是确实是指向空。
 
 # 关于nil的一些事
