@@ -11,7 +11,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : L 
-tagline: 分享技术 吐槽生活 
+tagline: 
 author :
   name : Nathan Liu 
   email : lzz900201@gmail.com 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Liu的博客
-tagline: 分享学习技术的经验
+tagline: ........
 ---
 {% include JB/setup %}
 
