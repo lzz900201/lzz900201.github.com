@@ -54,7 +54,7 @@ ARC为我们节省了很多代码，减轻了一些负担，但是这不意味�
 
 * 对特定文件设置`启用`或`禁用`ARC，在compile source中设置编译标记。
 	* 启用 `-fobjc-arc`
-	* 禁用 `-fon-objc-arc`
+	* 禁用 `-fno-objc-arc`
 	
 ![](http://img.onevcat.com/uploads/2012/06/arcpic15.png)
 
