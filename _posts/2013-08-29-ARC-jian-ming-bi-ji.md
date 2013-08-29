@@ -2,7 +2,7 @@
 layout: post
 title: "ARC简明笔记"
 description: ""
-category: 
+category: dev
 tags: []
 ---
 {% include JB/setup %}
