@@ -2,14 +2,17 @@
 layout: post
 title: "ARC简明笔记"
 description: ""
-category: dev
-tags: []
+category: programming
+tags: [iOS_Dev, ARC]
 ---
 {% include JB/setup %}
 
+本文是学习整理 [这篇][article_arc] ARC教程所得，如果需要查看原文，请自行移步。&raquo; [手把手教你ARC][article_arc]
+
+
 # ARC是什么 ARC不是什么
 
-ARC(Automatic Reference Counting)，自动引用计数，*是LLVM3.0编译器的新特性*，高效的自动内存管理机制。   
+ARC(Automatic Reference Counting)，自动引用计数，`是LLVM3.0编译器的新特性`，高效的自动内存管理机制。   
 
 但是需要注意，ARC是编译器特性，是编译器在编译代码时，在适当的位置，按照MRC内存管理规则，插入合适的内存管理代码。而不是运行时环境或者GC。   
 
@@ -65,4 +68,7 @@ ARC为我们节省了很多代码，减轻了一些负担，但是这不意味�
 * unsafe_unretained 对应原来的assign。需要支持iOS4的时候需要使用这个关键字。该关键字对应 __unsafe_unretained指针。
 * copy 和原来的基本一样，copy一个对象并且为其创建一个strong指针。
 * assign 对于对象来说永远不用assign了，实在需要的话应该用 unsafe_unretained代替。但是对于基本类型，比如 int,float,BOOL这些，还是需要用assign。
+
+[article_arc]: http://onevcat.com/2012/06/arc-hand-by-hand/
+
 
