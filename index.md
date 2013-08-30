@@ -16,7 +16,7 @@ tagline: ........
 <h4>Category</h4>
 <ul>
     {% for category in site.categories %}
-    <li><a href={{ BASE_PATH }}"/categories.html" title="view allposts">{{ category | first }} {{ category | last | size }}</a>
+    <li><a href={{ BASE_PATH }}"/categories.html" title="view allposts">{{ category | first }} <sup>{{ category | last | size }}</sup> </a>
     </li>
     {% endfor %}
 </ul>
