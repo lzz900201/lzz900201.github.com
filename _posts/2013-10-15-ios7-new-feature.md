@@ -50,6 +50,7 @@ UIKit的头文件，*UIKit.h*导入了所有包含在UIKit框架下的其他头�
 Modules将框架封装的更加简洁。预处理指令不再需要将*#import*语句逐字的替换成头文件的内容。相反，module将框架包装成自持有(self-contained)的区块，这些区块使用和PCH文件同样的预处理规则进行处理，同样可以提升编译速度。但是你不需要再在PCH文件中指定你要使用哪个框架，简单的使用modules就能获得编译速度的提升。
 
 modules的优点不止这些。我确定你要在你的应用中引入一个新的框架需要很多步骤，大致像这样：
+
 1. 在要引入框架的文件中添加#imort语句
 2. 编写代码
 3. 编译
@@ -64,7 +65,7 @@ module不仅告诉编译器由那个头文件组成了module，同样还告诉�
 ## 如何使用
 
 要在你的项目中使用module相当容易。对已存在的项目来说，首先要启用module，你可以在项目的构建选项里(build setting)里找到这个选项，然后将选项设置为YES即可
-![][](http://cdn3.raywenderlich.com/wp-content/uploads/2013/09/RW-Modules.png)
+![](http://cdn3.raywenderlich.com/wp-content/uploads/2013/09/RW-Modules.png)
 
 用Xcode5创建的新项目这个选项是默认启用的，但是你真的应该为你已有的项目启用该选项。
 
