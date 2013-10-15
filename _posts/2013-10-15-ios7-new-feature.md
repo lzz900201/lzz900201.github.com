@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "iOS7 new feature"
+title: "iOS7 new feature - Module"
 description: ""
 category: 
 tags: []
