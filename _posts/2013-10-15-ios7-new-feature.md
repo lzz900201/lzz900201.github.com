@@ -79,7 +79,7 @@ module不仅告诉编译器由那个头文件组成了module，同样还告诉�
 
 同样可以导入框架的某一部分，例如你只想导入UIView，像这样：
 	
-	@import.UIView;
+	@import UIKit.UIView;
 
 是的， 就是这么简单。我们不必把我们所有的```#import```语句替换为@import，因为编译器会隐式的为我们转换。
 
